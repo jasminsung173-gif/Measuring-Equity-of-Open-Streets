@@ -1,0 +1,191 @@
+[
+  {
+    "objectID": "results.html",
+    "href": "results.html",
+    "title": "Results",
+    "section": "",
+    "text": "Although each opportunity type displays a distinct spatial pattern, all share a common tendency toward concentration in Manhattan and Northwest Brooklyn. Figure 3 illustrates the mapped distribution of the three social determinants and highlights clear spatial variation across the city. The income distribution map shows a strong clustering of the high-income households in Lower Manhattan, as well in parts of Northwest Brooklyn, particularly neighborhoods such as Williamsburg, DUMBO, and Brooklyn Heights.\nThe Jobs distribution map similarly reveals a high concentration in Manhattan. However, unlike income, job density extends more broadly into Downtown Brooklyn, the Bronx’s employment centers, and portions of western Queens near Long Island City. The spatial distribution of schools shows a different pattern: school facilities are most densely concentrated in the Bronx, followed by Brooklyn, with Manhattan. Despite variation in the specific locations of intensity, the three opportunity layers demonstrate that Manhattan and Northwest Brooklyn exhibit higher concentrations of key social determinants than the rest of New York City.\n\nIncomeJobsSchools\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3. Spatial distribution of income, jobs, and school accessibility on the H3 grid."
+  },
+  {
+    "objectID": "results.html#spatial-distribution-of-opportunities-jobs-schools-health-on-the-h3-grid",
+    "href": "results.html#spatial-distribution-of-opportunities-jobs-schools-health-on-the-h3-grid",
+    "title": "Results",
+    "section": "",
+    "text": "Although each opportunity type displays a distinct spatial pattern, all share a common tendency toward concentration in Manhattan and Northwest Brooklyn. Figure 3 illustrates the mapped distribution of the three social determinants and highlights clear spatial variation across the city. The income distribution map shows a strong clustering of the high-income households in Lower Manhattan, as well in parts of Northwest Brooklyn, particularly neighborhoods such as Williamsburg, DUMBO, and Brooklyn Heights.\nThe Jobs distribution map similarly reveals a high concentration in Manhattan. However, unlike income, job density extends more broadly into Downtown Brooklyn, the Bronx’s employment centers, and portions of western Queens near Long Island City. The spatial distribution of schools shows a different pattern: school facilities are most densely concentrated in the Bronx, followed by Brooklyn, with Manhattan. Despite variation in the specific locations of intensity, the three opportunity layers demonstrate that Manhattan and Northwest Brooklyn exhibit higher concentrations of key social determinants than the rest of New York City.\n\nIncomeJobsSchools\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3. Spatial distribution of income, jobs, and school accessibility on the H3 grid."
+  },
+  {
+    "objectID": "results.html#open-streets-distribution",
+    "href": "results.html#open-streets-distribution",
+    "title": "Results",
+    "section": "2. Open Streets Distribution",
+    "text": "2. Open Streets Distribution\nThe spatial distribution of Open Streets follows the similar pattern observed in job opportunity distributions. As shown in Figure 4, Open Streets are heavily clustered in Lower Manhattan, Northwest Brooklyn, and the Jackson Heights area in Queens. In contrast, they are absent or appear at low density in outer-borough areas such as eastern Queens, southern Brooklyn, and Staten Island. Although the overall intensity of Open Streets is sparser than that of the opportunity variables, the program’s distribution similarly reflects a strong alignment with the lower Manhattan to Northwest Brooklyn corridor.\n\nFigure 4. Spatial Distribution of Open Streets Length"
+  },
+  {
+    "objectID": "results.html#normalized-accessibility-index-as_base_norm",
+    "href": "results.html#normalized-accessibility-index-as_base_norm",
+    "title": "Results",
+    "section": "3. Normalized Accessibility Index (AS_base_norm)",
+    "text": "3. Normalized Accessibility Index (AS_base_norm)\nThe common pattern between the distribution of opportunities and the distribution of Open Streets becomes even clearer when examining the normalized accessibility measure. Normalized accessibility represents each hexagon’s accessibility score that is derived from the cumulative opportunities within its k-ring catchment, and rescaled to a 0 - 1 range for comparability across variables. Figure 5, the normalized accessibility map shows a clear pattern of high accessibility extending through Manhattan, the Bronx, and Northwest Brooklyn, illustrated by the concentration of higher values (green shading). In contrast, areas with limited distributions of both opportunities and Open Streets appear with lower accessibility scores (yellow to red), reinforcing the raised concerns on the equity on the distribution. Taken together, these patterns raise the question of whether the concentration of Open Streets is directly correlated with underlying opportunity accessibility.\n\nFigure 5. Normalized Accessibility (AS_base_norm) Distribution Across NYC"
+  },
+  {
+    "objectID": "results.html#regression-analysis-predictors-of-open-streets-placement",
+    "href": "results.html#regression-analysis-predictors-of-open-streets-placement",
+    "title": "Results",
+    "section": "4. Regression Analysis: Predictors of Open Streets Placement",
+    "text": "4. Regression Analysis: Predictors of Open Streets Placement\nThe two regression models directly address whether the shared spatial patterns observed in Manhattan and Northwest Brooklyn are statistically correlated with Open Streets placement. Together, they demonstrate that Open Streets are disproportionately concentrated in socioeconomically advantaged and high-access areas.\nThe first regression model examines the composite accessibility index, summarizing access to jobs, schools, and health facilities. This reveals significant relationships between Open Streets and both baseline accessibility and income. As shown in Table 2, baseline accessibility (AS_base) is a strong predictor of Open Street length (β = 793.84, p &lt; 0.001), indicating that areas with greater access to key opportunities host substantially more Open Streets.Median household income is also positively associated with Open Streets density (β = 0.0013, p = 0.002), suggesting that higher-income neighborhoods are more likely to receive program investment. Although the model’s explanatory power is modest (R² = 0.069), the consistency and significance of both predictors highlight a clear pattern: Open Streets are more prevalent in high-access, higher-income areas. These findings point to potential spatial inequities in the program’s implementation.\nThe second model disaggregates the components of accessibility to identify which opportunity types are most strongly associated with Open Streets placement. This determinant-specific regression shows that jobs and schools are the primary drivers of Open Streets distribution. Employment density is positively and significantly associated with Open Streets (β = 0.0037, p = 0.001), indicating a tendency for Open Streets to cluster in job-rich areas. School density exhibits the largest effect among all predictors (β = 38.20, p &lt; 0.001), suggesting a particularly strong relationship between educational institutions and program placement. In contrast, health facility density shows no significant association (p = 0.820), indicating that Open Streets do not systematically align with health-service accessibility. Median household income remains a significant positive predictor in the second model (β = 0.0013, p = 0.006), reinforcing evidence of socioeconomic disparities.\nTaken together, the two models demonstrate that Open Streets are concentrated in job-dense, school-dense, and higher-income neighborhoods, highlighting equity concerns in the spatial distribution of the program.\n\nModel 1Model 2\n\n\n\n\n\n\n\n\n\nTable 2. OLS Regression Results of Composite Accessibility Model\nTable 3. OLS Regression Results of Disaggregated Accessibility Model"
+  },
+  {
+    "objectID": "results.html#equity-diagnostics",
+    "href": "results.html#equity-diagnostics",
+    "title": "Results",
+    "section": "5. Equity Diagnostics",
+    "text": "5. Equity Diagnostics\nThe quartile analysis further reinforces the inequities identified in the regression models, showing that high-income and high-access neighborhoods systematically receive more Open Streets.\nThe first quartile analysis, grouping hexagons by income (Table 4), shows a clear upward trend of higher-income areas hosting more Open Streets on average. The highest-income quartile (Q4) contains approximately 194 meters of Open Streets, which is 54 percent more than the lowest-income quartile (Q1). Although the middle quartiles display some variation, the overall pattern indicates that Open Street infrastructure is disproportionately located in higher-income neighborhoods.\nThe disparities become even more pronounced when quartiles are grouped by baseline accessibility (AS_base), as shown in Table 5. Hexagons with the lowest accessibility (Q1) contain almost no Open Streets, averaging only 12 meters, whereas the highest-access quartile (Q4) contains an average of 321 meters. This represents a twenty-six-fold difference between the lowest- and highest-access areas. Such a stark contrast demonstrates that Open Streets have been disproportionately allocated to neighborhoods that already possess strong access to jobs, schools, and health facilities, further amplifying existing spatial advantages.\n\nQuartile 1Quartile 2\n\n\n\n\n\n\n\n\n\nTable 4. Mean Open Streets Length by Income Quartile\nTable 5. Mean Open Streets Length by Accessibility Quartile\n\nQuartile 1Quartile 2\n\n\n\n\n\n\n\n\n\nFigure 6. Bar Graph for Mean Open Streets Length by Income Quartile\nFigure 7. Bar Graph for Mean Open Streets Length by Accessibility Quartile"
+  },
+  {
+    "objectID": "methodology.html",
+    "href": "methodology.html",
+    "title": "Methodology",
+    "section": "",
+    "text": "This study evaluates the spatial equity of New York City’s Open Streets Program by constructing an accessibility index that measures how effectively Open Streets connect residents to key social determinants of urban well-being. The methodological framework is adapted from Transform Transport’s Access Score (AS) model, which measures cumulative opportunities accessible from each location within a defined spatial threshold."
+  },
+  {
+    "objectID": "methodology.html#data-preparation",
+    "href": "methodology.html#data-preparation",
+    "title": "Methodology",
+    "section": "1. Data Preparation",
+    "text": "1. Data Preparation\nThe datasets listed in Table 1 were obtained through a combination of manual downloads and API-based retrieval. Open Streets location data were downloaded directly from NYC Open Data. School facilities and health facilities data were obtained from their respective New York City and New York State agency portals, each providing address-level facility information.\nJobs accessibility was measured using the Longitudinal Employer-Household Dynamics (LEHD) Workplace Area Characteristics (WAC) dataset. Job counts were extracted specifically for the New York City region at the census block level. Census tract boundaries were downloaded from the U.S. Census TIGER/Line shapefiles and filtered to include only New York City’s five counties.\nThe H3 hexagonal grid, used as the underlying spatial framework for all analyses, was generated programmatically rather than downloaded as a static dataset, as H3 grids are created algorithmically. A resolution of 8 was selected to balance spatial precision and computational efficiency. Median household income data were obtained at the census tract level using the U.S. Census API, then spatially joined and aggregated to the corresponding H3 cells.\n\nTable 1. List of datasets used in the research"
+  },
+  {
+    "objectID": "methodology.html#spatial-grid-definition",
+    "href": "methodology.html#spatial-grid-definition",
+    "title": "Methodology",
+    "section": "2. Spatial Grid Definition",
+    "text": "2. Spatial Grid Definition\nTo standardize spatial units of analysis across the study area, the research employs Uber Engineering’s H3 hexagonal grid system at resolution level 8. This grid produces uniform hexagons across NYC, enabling consistent comparison across neighborhoods. All datasets—Open Streets, socio-demographic variables, schools, health facilities, and job locations—are spatially assigned to their corresponding H3 cells.\n\nFigure 1. H3 Hex Grid Across NYC"
+  },
+  {
+    "objectID": "methodology.html#data-integration-and-spatial-assignment",
+    "href": "methodology.html#data-integration-and-spatial-assignment",
+    "title": "Methodology",
+    "section": "3. Data Integration and Spatial Assignment",
+    "text": "3. Data Integration and Spatial Assignment\nEach dataset listed in Table 1 is spatially integrated into the H3 grid to create a unified analytical framework. The procedures for spatial assignment vary by data type as follows.\nOpen Streets street segments are converted to centroids and assigned to their corresponding H3 cells. This enables the calculation of Open Street density within each hexagon based on the total length of Open Street segments.\nSchool and health facility datasets consist of point-based locations. These points are geocoded and aggregated to H3 cells, producing counts of educational and healthcare service opportunities available within each hexagon.\nEmployment data are derived from the Longitudinal Employer-Household Dynamics (LEHD) Workplace Area Characteristics dataset. Job counts at the census block level are assigned to H3 cells using block centroids, allowing employment accessibility to be represented at the hex level.\nMedian household income data are obtained at the census tract level and spatially joined to H3 cells using tract centroids. This process provides a socioeconomic indicator for each hexagon while maintaining consistency across spatial units.\nThe result of this integration process is a unified hex-level dataset that characterizes each H3 cell by three dimensions: the availability of essential opportunities, the socioeconomic profile of the surrounding population, and the level of Open Street provision."
+  },
+  {
+    "objectID": "methodology.html#accessibility-measurement-using-k-ring-spatial-catchments",
+    "href": "methodology.html#accessibility-measurement-using-k-ring-spatial-catchments",
+    "title": "Methodology",
+    "section": "4. Accessibility Measurement Using K-ring Spatial Catchments",
+    "text": "4. Accessibility Measurement Using K-ring Spatial Catchments\nBaseline accessibility to essential services—including schools, health facilities, and jobs—is measured using a k-ring spatial catchment approach. For each H3 cell, a neighborhood defined by k = 2 is generated, representing a walkable catchment area extending two hexagonal cells outward from the origin cell.\nWithin each k-ring, the cumulative number of opportunities is calculated separately for jobs, schools, and health facilities. These cumulative counts reflect the extent to which each location is structurally well served by essential opportunities, independent of the presence of Open Streets.\nOpen Streets are intentionally excluded from the cumulative opportunity calculations to ensure that they remain the dependent variable in subsequent analyses. This distinction allows the study to evaluate whether Open Streets are preferentially located in areas with higher baseline accessibility to essential services.\n\nFigure 2. Accessibility Catchment Example"
+  },
+  {
+    "objectID": "methodology.html#normalization-and-construction-of-the-baseline-accessibility-index",
+    "href": "methodology.html#normalization-and-construction-of-the-baseline-accessibility-index",
+    "title": "Methodology",
+    "section": "5. Normalization and Construction of the Baseline Accessibility Index",
+    "text": "5. Normalization and Construction of the Baseline Accessibility Index\nBecause opportunity datasets operate in different units and magnitudes, each cumulative opportunity variable is normalized to a 0–1 range using min–max scaling. These normalized values for schools, health facilities, and jobs are then averaged to construct a composite baseline accessibility index (AS_base), representing each hexagon’s intrinsic access to essential social determinants.\n\\[\nAS_{base} = \\frac{AS_{school, norm} + AS_{health, norm} + AS_{job, norm}}{3}\n\\]\nThe baseline accessibility index serves as a structural predictor of areas where residents already experience better access to essential services. This index provides a foundation for testing whether the Open Streets program reinforces or mitigates existing spatial inequalities."
+  },
+  {
+    "objectID": "methodology.html#equity-evaluation-through-regression-models",
+    "href": "methodology.html#equity-evaluation-through-regression-models",
+    "title": "Methodology",
+    "section": "6. Equity Evaluation through Regression Models",
+    "text": "6. Equity Evaluation through Regression Models\nTo assess whether Open Streets are equitably distributed across New York City, the study examines how Open Street provision varies across hexagons with differing levels of baseline accessibility and income. Two regression models are used for this evaluation.\n\nRegression Model 1: Composite Accessibility Model\n\\[\nOpenStreetLength \\sim AS_{base} + Income\n\\]\nThis model tests whether Open Streets are disproportionately allocated to areas with higher overall access to essential services and higher income levels.\n\n\nRegression Model 2: Determinant-Specific Model\n\\[\nOpenStreetLength \\sim Jobs + Schools + Health + Income\n\\]\nThis model identifies which specific social determinants are most strongly associated with Open Streets placement across the city."
+  },
+  {
+    "objectID": "methodology.html#equity-evaluation-through-accessibility-quartile-comparison",
+    "href": "methodology.html#equity-evaluation-through-accessibility-quartile-comparison",
+    "title": "Methodology",
+    "section": "7. Equity Evaluation through Accessibility Quartile Comparison",
+    "text": "7. Equity Evaluation through Accessibility Quartile Comparison\nAdditionally, descriptive analyses of income quartile comparisons and accessibility quartile comparisons, provide intuitive equity diagnostics. These comparisons reveal whether high-income or high-access neighborhoods systematically receive more Open Streets, indicating potential spatial inequities."
+  },
+  {
+    "objectID": "data-sources.html",
+    "href": "data-sources.html",
+    "title": "Data Sources",
+    "section": "",
+    "text": "Below is the complete list of data sources and references used in this study."
+  },
+  {
+    "objectID": "data-sources.html#data-sources",
+    "href": "data-sources.html#data-sources",
+    "title": "Data Sources",
+    "section": "Data Sources",
+    "text": "Data Sources\n\nOpen Streets\nOpen Streets Locations\nNYC Open Data – Open Streets Locations\nSchool Facilities\nSchool Point Locations\nNYC Open Data – School Point Locations\nHealth Facilities\nHealth Facility General Information\nNew York State Open Data – Health Facilities\nEmployment (Jobs)\nLongitudinal Employer-Household Dynamics (LEHD)\nWorkplace Area Characteristics (WAC)\nU.S. Census Bureau – LEHD LODES\nIncome\nMedian Household Income\nAmerican Community Survey (ACS)\nU.S. Census Bureau – ACS\nSpatial Grid\nH3 Hexagonal Grid System\nUber Engineering – H3\nCensus Geography\nCensus Tracts\nTIGER/Line® Shapefiles\nU.S. Census Bureau – TIGER/Line Shapefiles"
+  },
+  {
+    "objectID": "data-sources.html#references",
+    "href": "data-sources.html#references",
+    "title": "Data Sources",
+    "section": "References",
+    "text": "References\nTransportation Alternatives. “Open Streets Forever.”\nhttps://transalt.org/open-streets-forever-nyc. Accessed 5 Dec. 2025.\nUnited Nations. “The 17 Goals | Sustainable Development.”\nhttps://sdgs.un.org/goals. Accessed 5 Dec. 2025."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "about-me.html",
+    "href": "about-me.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Email: jasminsung173@gmail.com\n\n\n\nMy name is Jasmin Sung, and I am a transportation planning graduate student at the University of Pennsylvania, concentrating on Sustainable Transportation and Infrastructure. I specialize in transportation data collection, management, and geospatial analysis using ArcGIS, R Studio, and Python, developed through my transportation internship and research assistant roles.\nI am passionate about creating walkable and bikeable communities and advancing transportation safety grounded in Vision Zero principles. I aim to contribute to building resilient, equitable, and healthy cities through data-driven transportation planning.\n\n\n\n\nUniversity of Pennsylvania\nMaster of City Planning (MCP)\nSustainable Transportation and Infrastructure Planning\nAugust 2024 – May 2026\nNew York University\nBachelor of Arts in Urban Planning and Architecture Studies\nAugust 2020 – May 2024\n\n\n\n\nTransportation Intern\nPhiladelphia Streets Department — Philadelphia, PA\nJuly 2025 – Present\nResearch Assistant\nUniversity of Pennsylvania\nInstructor: Prof. Erick Guerra — Philadelphia, PA\nOctober 2024 – May 2025\nResearch Intern\nSNU Transportation Safety Lab\nInstructor: Prof. Sangjin Han — Seoul, South Korea\nMay 2023 – August 2023\n\n\n\n\n\nGIS & Spatial Analysis: ArcGIS Pro, ArcGIS Online\n\nProgramming & Data Analysis: Python, R Studio\n\nData & Visualization: Excel, Adobe Creative Cloud\n\nDesign & Drafting: AutoCAD"
+  },
+  {
+    "objectID": "about-me.html#jasmin-sung",
+    "href": "about-me.html#jasmin-sung",
+    "title": "About Me",
+    "section": "",
+    "text": "Email: jasminsung173@gmail.com\n\n\n\nMy name is Jasmin Sung, and I am a transportation planning graduate student at the University of Pennsylvania, concentrating on Sustainable Transportation and Infrastructure. I specialize in transportation data collection, management, and geospatial analysis using ArcGIS, R Studio, and Python, developed through my transportation internship and research assistant roles.\nI am passionate about creating walkable and bikeable communities and advancing transportation safety grounded in Vision Zero principles. I aim to contribute to building resilient, equitable, and healthy cities through data-driven transportation planning.\n\n\n\n\nUniversity of Pennsylvania\nMaster of City Planning (MCP)\nSustainable Transportation and Infrastructure Planning\nAugust 2024 – May 2026\nNew York University\nBachelor of Arts in Urban Planning and Architecture Studies\nAugust 2020 – May 2024\n\n\n\n\nTransportation Intern\nPhiladelphia Streets Department — Philadelphia, PA\nJuly 2025 – Present\nResearch Assistant\nUniversity of Pennsylvania\nInstructor: Prof. Erick Guerra — Philadelphia, PA\nOctober 2024 – May 2025\nResearch Intern\nSNU Transportation Safety Lab\nInstructor: Prof. Sangjin Han — Seoul, South Korea\nMay 2023 – August 2023\n\n\n\n\n\nGIS & Spatial Analysis: ArcGIS Pro, ArcGIS Online\n\nProgramming & Data Analysis: Python, R Studio\n\nData & Visualization: Excel, Adobe Creative Cloud\n\nDesign & Drafting: AutoCAD"
+  },
+  {
+    "objectID": "conclusions.html",
+    "href": "conclusions.html",
+    "title": "Conclusions",
+    "section": "",
+    "text": "With the rising importance of walkability in cities, it is increasingly critical for programs such as NYC’s Open Streets to provide equitable access to pedestrian-friendly environments. This study evaluated the fairness of the Open Streets program by quantifying its relationship to neighborhood accessibility and key social determinants, including job opportunities, health facilities, educational institutions, and household income. Using an H3-based spatial framework, cumulative accessibility measures, and regression modeling, the project assessed whether Open Streets are distributed in a way that supports walkability across all communities.\nThe analyses consistently indicate that Open Streets are not serving as a tool to enhance walkability in underserved, lower-income neighborhoods. Instead, the program appears to reinforce existing socioeconomic advantages. Spatial distributions of opportunities and Open Streets both reveal a shared pattern of concentration along the Lower Manhattan to Northwest Brooklyn corridor. The normalized accessibility index (AS_base_norm) further demonstrates that accessibility is significantly higher in Manhattan, the Bronx, and Northwest Brooklyn—areas already advantaged in terms of opportunity density. Regression results corroborate these spatial patterns, showing that Open Streets are disproportionately located in job-dense, school-dense, and higher-income neighborhoods. These findings suggest that the program’s placement is strongly correlated with preexisting structural advantages, rather than aligned with equity-oriented goals. The quartile-based equity diagnostics reinforce this conclusion: both high-income and high-access neighborhoods systematically receive more Open Streets infrastructure, while low-access, low-income areas remain underserved.\nTaken together, these results highlight a fundamental inequity in the current implementation of NYC’s Open Streets program. If Open Streets are to function as a tool for expanding walkability and improving urban accessibility, future program planning must prioritize the neighborhoods that currently lack such opportunities.\nA key limitation of this study is that it does not incorporate the funding and operational support structure of the Open Streets program, which likely plays a significant role in determining where Open Streets can be established and sustained. Because funding availability and community organizational capacity may strongly shape spatial outcomes, future research should examine how these financial and administrative factors influence placement equity."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Project Overview",
+    "section": "",
+    "text": "As cities increasingly prioritize walkability to promote livability and sustainability, this study examines whether New York City’s Open Streets Program is equitably distributed across neighborhoods. Building on Transportation Alternatives’ 2020 findings of income- and race-based disparities, the project evaluates placement equity through a broader lens of social determinants—jobs, schools, health facilities, and household income. Using H3 grid–based catchment analyses, accessibility to Open Streets is quantified for each hexagon by calculating the opportunities reachable within a walkable neighborhood. These accessibility measures are then compared across income levels to assess whether communities with differing socioeconomic characteristics receive similar benefits from the program. The goal is to provide a data-driven basis for improving the fairness and effectiveness of future Open Streets planning in New York City."
+  },
+  {
+    "objectID": "index.html#spatial-overview-gallery",
+    "href": "index.html#spatial-overview-gallery",
+    "title": "Project Overview",
+    "section": "Spatial Overview Gallery",
+    "text": "Spatial Overview Gallery\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nH3 Grid of NYC\nAccessibility Catchment (k-ring)\nMedian Household Income\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJob Density\nSchool Facilities\nOpen Streets Locations\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBaseline Accessibility (AS_base)\nOpen Streets by Income Quartile\nOpen Streets by Accessibility Quartile"
+  },
+  {
+    "objectID": "overview.html",
+    "href": "overview.html",
+    "title": "Project Overview",
+    "section": "",
+    "text": "Achieving walkability has become a central goal for many urban designers and policymakers. Walkability aligns closely with the United Nations’ 2030 Sustainable Development Goals, including Good Health and Well-being, Sustainable Cities and Communities, and Climate Action (United Nations Sustainable Development Goals).\nNew York City’s Open Streets Program directly supports these objectives. The program originated from the NYC Department of Transportation’s temporary street closures initiated in 2008, such as Weekend Walks, Summer Streets, and Play Streets, which repurposed streets for pedestrian and public use. In response to the COVID-19 pandemic and the increased demand for outdoor public space, NYC DOT expanded and rebranded these initiatives under the Open Streets program to provide safe outdoor and social distancing spaces.\nSince 2020, the Open Streets Program has transformed city streets into public spaces open to all, supporting a wide range of activities related to public health, economic development, education, recreation, and cultural programming. To date, the program has opened up to approximately 100 miles of Open Streets, representing about 1.6 percent of New York City’s street network (Transportation Alternatives, 2020)."
+  },
+  {
+    "objectID": "overview.html#introduction",
+    "href": "overview.html#introduction",
+    "title": "Project Overview",
+    "section": "",
+    "text": "Achieving walkability has become a central goal for many urban designers and policymakers. Walkability aligns closely with the United Nations’ 2030 Sustainable Development Goals, including Good Health and Well-being, Sustainable Cities and Communities, and Climate Action (United Nations Sustainable Development Goals).\nNew York City’s Open Streets Program directly supports these objectives. The program originated from the NYC Department of Transportation’s temporary street closures initiated in 2008, such as Weekend Walks, Summer Streets, and Play Streets, which repurposed streets for pedestrian and public use. In response to the COVID-19 pandemic and the increased demand for outdoor public space, NYC DOT expanded and rebranded these initiatives under the Open Streets program to provide safe outdoor and social distancing spaces.\nSince 2020, the Open Streets Program has transformed city streets into public spaces open to all, supporting a wide range of activities related to public health, economic development, education, recreation, and cultural programming. To date, the program has opened up to approximately 100 miles of Open Streets, representing about 1.6 percent of New York City’s street network (Transportation Alternatives, 2020)."
+  },
+  {
+    "objectID": "overview.html#equity-concerns-in-nyc-open-streets",
+    "href": "overview.html#equity-concerns-in-nyc-open-streets",
+    "title": "Project Overview",
+    "section": "Equity Concerns in NYC Open Streets",
+    "text": "Equity Concerns in NYC Open Streets\nDespite the program’s contribution to walkability, concerns have emerged regarding its equitable distribution. The Open Streets initiative has raised questions about whether its benefits are shared evenly across neighborhoods, or whether it has instead created new spatial disparities between communities that benefit from the program and those that do not.\nA report by the pedestrian advocacy organization Transportation Alternatives highlights significant inequities in the planning, implementation, and infrastructure quality of NYC’s Open Streets. The report finds that households living within walking distance of highly rated Open Streets were more than twice as likely to earn over $200,000 annually. In contrast, households earning below $75,000 were more likely to live near poorly rated Open Streets than near highly rated ones (Transportation Alternatives)."
+  },
+  {
+    "objectID": "overview.html#research-objective",
+    "href": "overview.html#research-objective",
+    "title": "Project Overview",
+    "section": "Research Objective",
+    "text": "Research Objective\nGiven this context, this project examines the equity of NYC’s Open Streets Program through the lens of broader social determinants. Specifically, the project aims to quantify the fairness of Open Streets locations by comparing their accessibility to essential urban services.\nThe analysis focuses on three core social determinants that represent basic daily needs: - Employment opportunities - Healthcare facilities - Educational institutions\nBy evaluating accessibility to these essential services, this project seeks to assess whether NYC’s Open Streets are equitably distributed across neighborhoods, or whether they are disproportionately concentrated in areas that already enjoy higher levels of access and socioeconomic advantage."
+  }
+]
